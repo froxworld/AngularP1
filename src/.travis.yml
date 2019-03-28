@@ -10,11 +10,11 @@ addons:
   chrome: stable
 
 before_script:
-- yarn global add @angular/cli
+- yarn global add @angular/cli # cette commannde permet de mettre en cache pour ne pas avoir a reinstaller a chaque fois
 
 cache:
   yarn: true
-  directories:
+  directories: #  dans ce repertoire pour le cache
   - node_modules
 
 script:
